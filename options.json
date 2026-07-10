@@ -657,7 +657,7 @@
         },
         {
           "id": "smuggle-missionaries",
-          "name": "Smuggle Missionaries",
+          "name": "Smuggle Missionaries (Freeborn Only)",
           "materials": [
             {
               "name": "Money (rings)",
