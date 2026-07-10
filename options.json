@@ -352,7 +352,7 @@
         },
         {
           "id": "raid-kalsea-s-coastline",
-          "name": "Raid Kalsea's Coastline",
+          "name": "Raid Kalsea's Coastline (Marcher Only)",
           "materials": [
             {
               "name": "Jotun Trinket",
@@ -433,7 +433,7 @@
         },
         {
           "id": "raid-the-broken-shore",
-          "name": "Raid the Broken Shore",
+          "name": "Raid the Broken Shore (Freeborn Only)",
           "materials": [
             {
               "name": "Grendel Luxuries",
