@@ -671,7 +671,6 @@ function openDetails(kind, id) {
 function copySummary() {
   const selection = getCurrentSelection();
   const effectiveLevel = getEffectiveLevel();
-  const rank = getFleetRank(effectiveLevel);
 
   const characterName = els.characterName.value.trim();
   const fleetName = els.fleetName.value.trim();
