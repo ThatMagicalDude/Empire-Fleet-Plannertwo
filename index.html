@@ -65,38 +65,42 @@
 
       <p id="ritualNote" class="ritual-note">No ritual selected.</p>
 
-      <div class="controls-grid">
-        <label class="control" id="regionFilterControl">
-          <span>Region</span>
-          <select id="regionFilter">
-            <option value="all">All regions</option>
-          </select>
-        </label>
+<div class="controls-grid">
+  <label class="control" id="regionFilterControl">
+    <span>Region</span>
+    <select id="regionFilter">
+      <option value="all">All regions</option>
+    </select>
+  </label>
 
-      <label class="control" id="materialFilterControl">
-  <span>Material</span>
-  <select id="materialFilter">
-    <option value="all">All materials</option>
-  </select>
-</label>
+  <label class="control" id="materialFilterControl">
+    <span>Material</span>
+    <select id="materialFilter">
+      <option value="all">All materials</option>
+    </select>
+  </label>
 
-        <label class="control control--wide" id="searchControl">
-  <span>Search</span>
-  <input id="searchInput" type="search" placeholder="Search port, region, or material..." />
-</label>
-
-      <div class="stats-row" aria-live="polite">
-<div class="stat-card" id="visibleCountPanel">
-  <span class="stat-card__label" id="visibleCountLabel">Visible Ports</span>
-  <strong id="visibleCount">0</strong>
+  <label class="control control--wide" id="searchControl">
+    <span>Search</span>
+    <input id="searchInput" type="search" placeholder="Search port, region, or material..." />
+  </label>
 </div>
-<div class="stat-card" id="materialCountPanel">
-  <span class="stat-card__label">Known Materials</span>
-  <strong id="materialCount">0</strong>
-</div>
-<div class="stat-card" id="selectedChoicePanel">
-  <span class="stat-card__label" id="selectedChoiceLabel">Selected Port</span>
-  <strong id="selectedPortShort">None</strong>
+
+<div class="stats-row" aria-live="polite">
+  <div class="stat-card" id="visibleCountPanel">
+    <span class="stat-card__label" id="visibleCountLabel">Visible Ports</span>
+    <strong id="visibleCount">0</strong>
+  </div>
+
+  <div class="stat-card" id="materialCountPanel">
+    <span class="stat-card__label">Known Materials</span>
+    <strong id="materialCount">0</strong>
+  </div>
+
+  <div class="stat-card" id="selectedChoicePanel">
+    <span class="stat-card__label" id="selectedChoiceLabel">Selected Port</span>
+    <strong id="selectedPortShort">None</strong>
+  </div>
 </div>
     </section>
 
