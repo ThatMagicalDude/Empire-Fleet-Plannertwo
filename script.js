@@ -683,9 +683,9 @@ function copySummary() {
     "",
     `Activity: ${isTradeActivity() ? "Trading" : getActivityById()?.name}`,
     `Choice: ${selection ? selection.name : "None selected"}`,
-    `Region / Type: ${selection ? selection.subheading : "N/A"}`,
     `Fleet level: ${state.baseLevel}`,
     `${RITUALS[state.ritual]?.name || "No ritual"}; Weirwood +${state.weirwoodUpgrade}, Debuff -${state.debuff}`,
+    `Effective Rank: ${getFleetRank(effectiveLevel)}`,
     "",
     "Voyage production:"
   ];
