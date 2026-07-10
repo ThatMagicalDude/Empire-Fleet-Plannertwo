@@ -113,7 +113,7 @@ function requiredElementsExist() {
     "regionFilterControl", "materialFilterControl", "searchControl",
 "visibleCountPanel", "materialCountPanel", "selectedChoicePanel",
 "regionFilter", "materialFilter", "searchInput", "resetFilters",
-"visibleCount", "visibleCountLabel", "materialCount", "selectedPortShort", "selectedChoiceLabel",, "portChoiceControl", "optionChoiceControl",
+"visibleCount", "visibleCountLabel", "materialCount", "selectedPortShort", "selectedChoiceLabel", "portChoiceControl", "optionChoiceControl",
     "chosenPort", "chosenOption", "portsHeading", "listEyebrow", "ports", "emptyState",
     "productionSummary",
 "copySummary",
