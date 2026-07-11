@@ -463,3 +463,14 @@ footer { color: #d8c79d; }
 .kofi-button:hover {
   background: #8a4f2a;
 }
+
+.creator-portrait {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #8b1e1e;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  display: block;
+  margin: 0 auto 0.75rem;
+}
