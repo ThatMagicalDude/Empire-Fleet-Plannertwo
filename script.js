@@ -720,15 +720,15 @@ function openDetails(kind, id) {
 
   if (!selection) return;
 
-  els.dialogContent.innerHTML = `
-    <p class="eyebrow">${selection.subheading}</p>
-    <h2>${selection.name}</h2>
-    <p class="subtitle">Production shown for effective rank ${effectiveLevel}.</p>
-    < class="dialog-material-grid">
-      ${selection.materials.map(material => materialRowHtml(material, effectiveLevel)).join("")}
-    </>
-  `;
+els.dialogContent.innerHTML = `
+  <p class="eyebrow">${selection.subheading}</p>
+  <h2>${selection.name}</h2>
+  <p class="subtitle">Production shown for effective rank ${effectiveLevel}.</p>
 
+  <div class="dialog-material-grid">
+    ${selection.materials.map(material => materialRowHtml(material, effectiveLevel)).join("")}
+  </div>
+`;
   if (typeof els.dialog.showModal === "function") els.dialog.showModal();
   else alert(`${selection.name}\n${selection.materials.map(m => `${m.name}: ${getProductionAmount(m, effectiveLevel)}`).join("\n")}`);
 }
