@@ -321,11 +321,18 @@ function populateModifierSelects() {
   els.weirwoodUpgrade.innerHTML = "";
   const maxPermanentIncrease = Number(state.portsData.maxFleetLevel || 14) - DEFAULT_FLEET_LEVEL;
   for (let i = 0; i <= maxPermanentIncrease; i += 1) {
-    const option = document.createElement("option");
-    option.value = String(i);
-    option.textContent = i === 0 ? "None" : `+${i} permanent`;
-    els.weirwoodUpgrade.appendChild(option);
+  const option = document.createElement("option");
+  option.value = String(i);
+
+  if (i === 0) {
+    option.textContent = "None";
+  } else {
+    const upgradedFleetRank = i + 1;
+    option.textContent = `+${i} upgrade — costs ${upgradedFleetRank} Imperial wain${upgradedFleetRank === 1 ? "" : "s"} of weirwood`;
   }
+
+  els.weirwoodUpgrade.appendChild(option);
+}
 
   els.debuffLevel.innerHTML = "";
   for (let i = 0; i <= 4; i += 1) {
