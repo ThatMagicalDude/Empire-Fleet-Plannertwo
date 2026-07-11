@@ -475,3 +475,27 @@ footer { color: #d8c79d; }
   display: block;
   margin: 0 auto 0.75rem;
 }
+.controls-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  align-items: end;
+}
+
+.controls-grid .control,
+.controls-grid select,
+.controls-grid input,
+.controls-grid .static-value {
+  min-width: 0;
+  width: 100%;
+}
+
+.control--wide {
+  grid-column: span 2;
+}
+
+@media (max-width: 900px) {
+  .control--wide {
+    grid-column: span 1;
+  }
+}
