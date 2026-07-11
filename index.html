@@ -35,38 +35,39 @@
       </div>
 
       <div class="controls-grid controls-grid--fleet">
-        <label class="control control--wide">
-          <span>Fleet Activity</span>
-          <select id="activityType"></select>
-        </label>
+  <label class="control control--wide">
+    <span>Fleet Activity</span>
+    <select id="activityType"></select>
+  </label>
 
-      <div class="control">
-  <span>Base Fleet</span>
-  <p id="baseFleetLevel" class="static-value">Level 5</p>
+  <div class="control">
+    <span>Base Fleet</span>
+    <p id="baseFleetLevel" class="static-value">Level 5</p>
+  </div>
+
+  <label class="control">
+    <span>Weirwood Upgrade</span>
+    <select id="weirwoodUpgrade"></select>
+  </label>
+
+  <label class="control">
+    <span>Enchant Fleet / Ritual</span>
+    <select id="ritualSelect"></select>
+  </label>
+
+  <label class="control">
+    <span>Regional Buff/Debuff</span>
+    <select id="debuffLevel"></select>
+  </label>
 </div>
 
-        <label class="control">
-          <span>Weirwood Upgrade</span>
-          <select id="weirwoodUpgrade"></select>
-        </label>
-
-        <label class="control">
-          <span>Enchant Fleet / Ritual</span>
-          <select id="ritualSelect"></select>
-        </label>
-
-        <label class="control">
-  <span>Regional Buff/Debuff</span>
-  <select id="debuffLevel"></select>
-</label>
-
-      <div class="effective-box" aria-live="polite">
-        <div>
-          <span class="stat-card__label">Effective Fleet Level</span>
-          <strong id="effectiveLevelDisplay">5</strong>
-        </div>
-        <p id="effectiveLevelNote">Default fleet level with no modifiers.</p>
-      </div>
+<div class="effective-box" aria-live="polite">
+  <div>
+    <span class="stat-card__label">Effective Fleet Level</span>
+    <strong id="effectiveLevelDisplay">5</strong>
+  </div>
+  <p id="effectiveLevelNote">Default fleet level with no modifiers.</p>
+</div>
 
       <p id="ritualNote" class="ritual-note">No ritual selected.</p>
 
