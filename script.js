@@ -452,7 +452,13 @@ function renderEffectiveLevel() {
 
   const parts = [`Base ${state.baseLevel}`];
   if (state.weirwoodUpgrade) parts.push(`+${state.weirwoodUpgrade} Weirwood`);
-  if (state.debuff) parts.push(`-${state.debuff} debuff`);
+  if (state.debuff) {
+  parts.push(
+    state.debuff > 0
+      ? `+${state.debuff} regional buff`
+      : `${state.debuff} regional debuff`
+  );
+}
   if (ritual.rankModifier > 0) parts.push(`+${ritual.rankModifier} ${ritual.name}`);
   if (ritual.rankModifier < 0) parts.push(`${ritual.rankModifier} ${ritual.name}`);
 
